@@ -1,8 +1,0 @@
-#Connect-ExchangeOnline
-
-Get-MailboxFolderPermission -Identity "RES-NL-ENS2-Conference Room 1.09:\Calendar"
-
-
-Add-MailboxFolderPermission -Identity "RES-NL-ENS2-Conference Room 1.09:\Calendar" -User DLT-NL-ENS2-TELECATS-MEDEWERKERS -AccessRights Reviewer
-
-Remove-MailboxFolderPermission -Identity "RES-NL-ENS2-Conference Room 1.09:\Calendar" -User yasar.abravaya

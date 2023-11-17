@@ -1,3 +1,0 @@
-quser /server:servername
-
-logoff <session-id> /server:servername

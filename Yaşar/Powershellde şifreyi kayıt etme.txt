@@ -1,5 +1,0 @@
-#$credential = Get-Credential
-
-#$credential | Export-Clixml -Path C:\Scripts\Snapshot_Removal\mycredential.xml
-
-$credential = Import-Clixml -Path C:\Scripts\Snapshot_Removal\mycredential.xml

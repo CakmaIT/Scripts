@@ -1,1 +1,0 @@
-﻿C:\Users\yasar.abravaya\AppData\Local\Microsoft\Teams\Update.exe --processStart "Teams.exe"

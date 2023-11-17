@@ -1,1 +1,0 @@
-Get-ADUser -filter {samaccountname -like "*adm-*"} -Properties whenCreated | Select Name,SamaccountName,whenCreated | export-csv C:\EDR\AzureGroups\adm-whencreated.csv -NoTypeInformation -Encoding Unicode

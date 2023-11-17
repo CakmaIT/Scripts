@@ -1,1 +1,0 @@
-Add-RecipientPermission -Identity distributiongroup@example.com -Trustee mailbox@example.com -AccessRights SendAs

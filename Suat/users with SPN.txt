@@ -1,1 +1,0 @@
-(get-aduser -properties * -filter {serviceprincipalname -like "*"}).count

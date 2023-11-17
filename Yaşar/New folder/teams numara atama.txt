@@ -1,3 +1,0 @@
-#Connect-MicrosoftTeams
-
-Set-CsPhoneNumberAssignment -Identity lucy.mcmanus@uk.webhelp.com -PhoneNumber +441324575125 -PhoneNumberType DirectRouting

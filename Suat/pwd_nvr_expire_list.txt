@@ -1,1 +1,0 @@
-Get-ADUser -filter {passwordneverexpires -eq $true} | Select-Object samaccountname, distinguishedname| out-file C:\edr\pwd_nvr_expires_list.txt
