@@ -1,0 +1,26 @@
+$DCList=Get-ADComputer -Filter * -SearchBase "OU=Domain Controllers,DC=WEBHELP,DC=local" | Select-Object name
+
+$Cred = New-Object System.Management.Automation.PSCredential ("adm-smaden@webhelp.local", $password)
+
+$password = ConvertTo-SecureString "mypassword" -AsPlainText -Force
+
+foreach ($item in $DCList)
+{
+       
+    Invoke-Command -ComputerName $item.name -Credential $Cred -ScriptBlock {
+   
+   cd C:\"Program Files"\Elastic\Agent
+   elastic-agent.exe uninstall
+}
+}
+
+foreach ($item in $DCList)
+{
+       
+    Invoke-Command -ComputerName $item.name -Credential $Cred -ScriptBlock {
+    New-Item c:\EDR -ItemType Directory
+    Copy-Item "\\10.89.68.175\c$\EDR\_Install-EDR-Fr" "c:\EDR"
+   cd C:\EDR
+   SensorWindowsInstaller-whp-all-prd-ext-3.61.4.exe -c SensorWindowsInstaller-whp-all-prd-ext-3.61.4.cfg -k 0B8DA55FE0E12D253765 -l install.log
+}
+}

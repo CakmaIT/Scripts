@@ -1,0 +1,7 @@
+Connect-SPOservice https://webhelpgroup-admin.sharepoint.com/
+
+Set-SPOSite -Identity "https://webhelpgroup-my.sharepoint.com/personal/mmasar_cz_webhelp_com" -LockState "Unlock"
+
+Set-SPOSite -Identity "https://webhelpgroup-my.sharepoint.com/personal/RauNavarro_webhelp_com" -LockState "Unlock"
+
+use UPN

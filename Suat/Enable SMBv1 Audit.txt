@@ -1,0 +1,13 @@
+$DCList=Get-ADComputer -filter * -SearchBase "OU=Domain Controllers,DC=WEBHELP,DC=local"
+
+foreach ($item in $DCList)
+{
+    write-host $item.name
+    
+    Invoke-Command -ComputerName $item.name -Credential $Cred -ScriptBlock {
+   Set-SmbServerConfiguration -AuditSmb1Access $true -Confirm:$false
+    Get-SmbServerConfiguration | Select AuditSmb1Access
+}
+}
+$password = ConvertTo-SecureString "mypassword" -AsPlainText -Force
+$Cred = New-Object System.Management.Automation.PSCredential ("adm-smaden@webhelp.local", $password)

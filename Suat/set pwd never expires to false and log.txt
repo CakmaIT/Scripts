@@ -1,0 +1,19 @@
+$userfrlist=get-content C:\EDR\Agents\userneverexpire.txt
+
+$userfrlist.Count
+$i=0
+$d=0
+foreach ($i in $userfrlist)
+{
+    Set-Aduser -Identity $i -passwordneverexpires $false
+    $d=(Get-Aduser -Identity $i -properties PasswordNeverExpires ).passwordneverexpires
+    
+    if ($d -eq $false)
+    {
+       Add-Content -Path "C:\EDR\userlist\fr_gsg\fr_pwd_exp_users.txt" -Value "$i  done"
+    }
+    else
+    {
+         Add-Content -Path "C:\EDR\userlist\fr_gsg\fr_pwd_never_exp_users.txt" -Value "$i not ok"
+    }
+}

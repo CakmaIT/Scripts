@@ -1,0 +1,19 @@
+Import-Module ActiveDirectory
+
+# Enter the name of the nested group
+$GroupName = "GSG-APP056-DUO-MFA-VPN"
+
+# Get the group object
+$Group = Get-ADGroup $GroupName -Properties MemberOf
+
+# Get all the nested groups recursively
+$NestedGroups = Get-ADGroup -Filter { MemberOf -RecursiveMatch $Group.DistinguishedName } -Properties Members
+
+
+# Get all the members of the nested groups
+$AllMembers = foreach ($NestedGroup in $NestedGroups) {
+    Get-ADGroupMember -Identity $NestedGroup | Select-Object name,distinguishedname,userprincipalname,mail
+}
+
+# Export the members to a CSV file
+$AllMembers | Export-Csv -Path "C:\edr\GSG-APP056-DUO-MFA-VPNv3.0.csv" -NoTypeInformation -Encoding Unicode

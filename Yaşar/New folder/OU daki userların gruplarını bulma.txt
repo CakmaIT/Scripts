@@ -1,0 +1,20 @@
+$OUpath = 'OU=DE,OU=USERS,OU=ADMIN,DC=WEBHELP,DC=local'
+
+$users = Get-ADUser -Filter * -SearchBase $OUpath  
+
+Connect-MsolService  
+
+$Results = foreach( $user in $users ){
+
+    $groups = Get-ADPrincipalGroupMembership -Identity $user.SamAccountName      
+
+New-Object -TypeName psobject -Property @{ 
+
+        UserPrincipalName               = $user.UserPrincipalName 
+        Group                           = $groups.name -join ';' 
+
+         }
+    }  
+$Results | select UserPrincipalName,group  
+
+$Results | export-csv c:/temp/usergroups.csv -NoTypeInformation

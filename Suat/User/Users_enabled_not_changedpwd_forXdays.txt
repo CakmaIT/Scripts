@@ -1,0 +1,4 @@
+$Days = 90
+$Time = [DateTime]::Today.AddDays(-$Days)
+
+Get-ADUser -Properties displayname,userprincipalname,samaccountname,distinguishedname,passwordLastSet  -Filter {(PasswordLastSet -lt $Time) -and (Enabled -eq $true) -and (userprincipalname -notlike "*svc-*") -and (userprincipalname -notlike "*smb-*") -and (userprincipalname -notlike "*res-*") -and (displayname -notlike "*svc-*") -and (displayname -notlike "*smb-*") -and (displayname -notlike "*res-*")-and (CN -notlike "*svc-*") -and (CN -notlike "*smb-*") -and (CN -notlike "*res-*")} | Select-Object displayname,samaccountname,distinguishedname,passwordLastSet | export-csv C:\EDR\pwd_not_changed__userlist_90days_10thMay.csv -NoTypeInformation -Encoding Unicode

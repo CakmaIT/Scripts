@@ -1,0 +1,7 @@
+Connect-ExchangeOnline -UserPrincipalName admin@contoso.com
+
+Get-DistributionGroup "GroupName" | fl DisplayName,MaxSendSize
+
+Set-DistributionGroup "GroupName" -MaxSendSize 1000KB
+
+Get-DistributionGroup "GroupName" | fl DisplayName,MaxSendSize

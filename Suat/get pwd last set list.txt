@@ -1,0 +1,13 @@
+$csvPath = "C:\EDR\userlist\usa\usa_pwd_last_set2.csv"
+
+ 
+
+Get-Content C:\EDR\userlist\usa\usa_user_list.txt | ForEach-Object {
+    $user = $_
+    $pwdLastSet = (Get-ADUser -filter {displayname -like $user} -Properties "PwdLastSet").PwdLastSet
+    $lastSetDate = [DateTime]::FromFileTime($pwdLastSet)
+    New-Object PSObject -Property @{
+        "Kullanıcı Adı" = $user
+        "Son Şifre Değiştirme Tarihi" = $lastSetDate
+    }
+} | Export-Csv $csvPath -NoTypeInformation -Encoding Unicode

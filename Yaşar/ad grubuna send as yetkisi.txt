@@ -1,0 +1,19 @@
+# İlk kullanıcının adını alın
+$firstUser = Read-Host "Userlogon name"
+
+# İlk kullanıcının distinguishedName değerini alın
+$firstUserDN = (Get-ADUser -Identity $firstUser).DistinguishedName
+
+# Sonsuz bir döngü başlatın
+while ($true) {
+    # Bir grup adı sorun
+    $groupName = Read-Host "group name (exit q)"
+
+    # Eğer 'q' tuşuna basılırsa döngüden çık
+    if ($groupName -eq 'q') {
+        break
+    }
+
+    # İkinci grubun authorig değerini ayarlayın
+    Set-ADGroup -Identity $groupName -Add @{authorig=$firstUserDN}
+}

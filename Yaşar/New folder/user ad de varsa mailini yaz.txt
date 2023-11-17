@@ -1,0 +1,28 @@
+# Txt dosyasındaki kullanıcıları okuyun
+$usernames = Get-Content -Path 'C:\Users\adm-yabravaya\Desktop\li.txt'
+
+# Sonuçları kaydetmek için boş bir dizi oluşturun
+$results = @()
+
+# Her kullanıcı adı için ad üzerinde arama yapın
+foreach ($username in $usernames) {
+    $user = Get-ADUser -Filter {sAMAccountName -eq $username} -Properties sAMAccountName, EmailAddress
+    
+    if ($user) {
+        $results += [PSCustomObject]@{
+            Username = $username
+            Result = "Var"
+            Email = $user.EmailAddress
+        }
+    }
+    else {
+        $results += [PSCustomObject]@{
+            Username = $username
+            Result = "Yok"
+            Email = ""
+        }
+    }
+}
+
+# Sonuçları CSV dosyasına kaydet
+$results | Export-Csv -Path "C:\temp\1results.csv" -NoTypeInformation

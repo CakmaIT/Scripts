@@ -1,0 +1,24 @@
+# Import the list of users from a file
+$users = Get-Content -Path C:\Path\To\File.txt
+
+# Define the threshold for password change
+$daysThreshold = 4
+
+# Get the current date
+$currentDate = Get-Date
+
+# Loop through each user and check their password change date
+foreach ($user in $users) {
+    $userObject = Get-ADUser -Identity $user -Properties PasswordLastSet, AccountExpirationDate, PasswordNeverExpires
+    
+    # Check if the password has been changed in the last $daysThreshold days
+    if ($userObject.PasswordLastSet -ne $null) {
+        $passwordAge = $currentDate - $userObject.PasswordLastSet
+        if ($passwordAge.Days -gt $daysThreshold) {
+            # Check if the account is set to never expire
+            if ($userObject.PasswordNeverExpires -eq $true) {
+                Write-Output "$user's password was last changed on $($userObject.PasswordLastSet.ToShortDateString()), which is more than $daysThreshold days ago and the account is set to never expire."
+            }
+        }
+    }
+}

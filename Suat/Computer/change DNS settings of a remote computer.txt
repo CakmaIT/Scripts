@@ -1,0 +1,5 @@
+$comp=
+
+$ind=get-wmiobject Win32_NetworkAdapterConfiguration -filter "IPEnabled=TRUE" -computername $comp| Select-Object Index
+
+Invoke-Command -ComputerName $comp -ScriptBlock {Set-DnsClientServerAddress -InterfaceAlias $ind.Index -ServerAddresses ("10.77.77.250","127.0.0.1")}

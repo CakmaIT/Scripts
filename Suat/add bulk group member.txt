@@ -1,0 +1,5 @@
+$list=get-content 'C:\scripts and data\users.txt'
+foreach ($item in $list)
+{
+  Add-ADGroupMember -identity GSG-APP025-ADMIN-ACCESS-WEBHELP -Members ⁠$item
+}

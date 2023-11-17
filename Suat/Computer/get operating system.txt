@@ -1,0 +1,9 @@
+$complist= Get-Content C:\edr\Vcenter\conflicting_os_data.txt
+
+$complist.count
+$NewList=foreach ($com in $complist)
+{
+    Get-ADComputer -Identity $com -Properties operatingsystem | Select-Object name,operatingsystem
+}
+
+$NewList | export-csv C:\edr\Vcenter\OS_data.csv -NoTypeInformation -Encoding Unicode

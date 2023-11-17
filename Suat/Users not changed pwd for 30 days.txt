@@ -1,0 +1,3 @@
+$Days = 30
+$Time = [DateTime]::Today.AddDays(-$Days)
+Get-ADUser -Filter '(PasswordLastSet -gt $Time)' -Properties displayname,samaccountname,distinguishedname,passwordLastSet | Select-Object displayname,samaccountname,distinguishedname,passwordLastSet | export-csv C:\EDR\pwd_not_changed6.csv -NoTypeInformation -Encoding Unicode

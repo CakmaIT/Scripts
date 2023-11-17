@@ -1,0 +1,17 @@
+function Get-AzureADGroupMemberNested($ObjectId) {
+	#Get the members of this group
+	$members = Get-AzureADGroupMember -ObjectId $ObjectID
+	foreach ($member in $members)
+	{
+		if ($member.ObjectType -eq "Group")
+		{	
+			#If member is a group then recursively look at group membership
+			Get-AzureADGroupMemberNested -ObjectId $member.ObjectID
+		} elseif  ($member.ObjectType -eq "User") {
+			#If member is a user Add to Team Channel
+			#Get UPS of User associated with ID
+		    $User = $member.UserPrincipalName
+			Write-Host $user
+		}
+	}
+}

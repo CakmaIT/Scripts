@@ -1,0 +1,1 @@
+Get-ADUser -Filter {samaccountname -like "*adm-*"} -Properties name,samaccountname,whencreated,description | Select-Object name,samaccountname,whencreated,description | export-csv C:\EDR\PrivilegedAccountList.csv -NoTypeInformation -Encoding Unicode

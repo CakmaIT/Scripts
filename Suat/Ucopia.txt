@@ -1,0 +1,3 @@
+Grant accesss to ucopia app, add user to a group
+
+GSG-MA-FES5-WIFI-UCP-DELEG

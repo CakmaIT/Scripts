@@ -1,0 +1,3 @@
+Get-ADObject -Filter {displayname -eq "dlt-ma-tec1-easyjet-encadrants"} –includeDeletedObjects
+
+
