@@ -1,0 +1,6 @@
+$l_space_header 				=	"Space Report"
+$l_space_drive					=	"Drive"
+$l_space_name					=	"Name"
+$l_space_size					=	"Size"
+$l_space_free					=	"Free"
+$l_space_used					=	"Used"

@@ -1,0 +1,1 @@
+﻿Find-AdmPwdExtendedRights -Identity 'OU=06 Istirak,DC=acibadem,DC=com,DC=tr' -IncludeComputers | Sort-Object ExtendedRightHolders -Descending | Format-Table -AutoSize

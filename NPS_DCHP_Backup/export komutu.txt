@@ -1,0 +1,9 @@
+Export-NpsConfiguration –Path \\10.4.5.116\Notlar\konfigYedek\nps.xml
+      $Bilgisayar=$env:computername
+      $filenameFormatNPS = "$Bilgisayar" + " " + "NPS" + " " + (Get-Date -Format "yyyy-MM-dd") + ".xml"
+      Rename-Item -Path "\\10.4.5.116\Notlar\konfigYedek\nps.xml" -NewName $filenameFormatNPS
+
+      netsh dhcp server export \\10.4.5.116\Notlar\konfigYedek\dhcp.txt all
+      $Bilgisayar=$env:computername
+      $filenameFormatDHCP = "$Bilgisayar" + " " + "DHCP" + " " + (Get-Date -Format "yyyy-MM-dd") + ".txt"
+      Rename-Item -Path "\\10.4.5.116\Notlar\konfigYedek\dhcp.txt" -NewName $filenameFormatDHCP

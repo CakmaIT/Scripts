@@ -1,0 +1,4 @@
+cd 'C:\Report\WeeklyReport\ad envanter'
+
+
+.\ADDS_Inventory_V2.ps1 -HTML

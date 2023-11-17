@@ -1,0 +1,137 @@
+Servers Availability Details Status
+SNo,ServerName,IPAddress,Operating System,Domain,Status
+1,GMSCCM,10.6.240.123,Microsoft Windows Server 2012 R2 Standard,acibadem.com.tr,Ok
+2,GMSCCMSQL2014,10.6.240.124,Microsoft Windows Server 2012 R2 Standard,acibadem.com.tr,Ok
+3,ASG100SCS01,10.6.243.187,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+4,ASG101SCS01,10.150.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+5,ASG102SCS01,172.17.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+6,ASG120SCS01,10.90.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+7,ASG121SCS01,10.20.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+8,ASG122SCS01,10.110.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+9,ASG123SCS01,10.50.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+10,ASG124SCS01,10.120.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+11,ASG125SCS01,10.60.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+12,ASG126SCS01,10.191.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+13,ASG127SCS01,10.100.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+14,ASG128SCS01,10.30.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+15,ASG129SCS01,10.40.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+16,ASG130SCS01,10.80.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+17,ASG131SCS01,10.140.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+18,ASG132SCS01,10.130.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+19,ASG133SCS01,10.160.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+20,ASG134SCS01,10.170.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+21,ASG135SCS01,10.180.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+22,APS102SCS01,10.19.0.188,Microsoft Windows Server 2019 Standard,acibadem.com.tr,Ok
+Servers Disk Space Details
+SNo,ServerName,Drive,VolName,Total_Capacity(GB),Used_Capacity(GB),Free_Space(GB),Free_Space%,Status
+1,GMSCCM,C:,OS,249.66,190.38,59.28,23.74,Ok
+2,GMSCCM,S:,SCCM,600,291.36,308.64,51.44,Ok
+3,GMSCCM,W:,WSUS,300,212.67,87.33,29.11,Ok
+4,GMSCCMSQL2014,C:,,299.66,262.5,37.16,12.4,Warning
+5,GMSCCMSQL2014,W:,New Volume,200,156.66,43.34,21.67,Ok
+6,ASG100SCS01,C:,,99.46,22.55,76.91,77.33,Ok
+7,ASG100SCS01,E:,Content Library,149.98,98.23,51.75,34.5,Ok
+8,ASG101SCS01,C:,,99.46,17.95,81.51,81.95,Ok
+9,ASG101SCS01,E:,Content Library,99.98,37.52,62.46,62.47,Ok
+10,ASG102SCS01,C:,,99.46,24.06,75.4,75.81,Ok
+11,ASG102SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+12,ASG120SCS01,C:,,99.46,24.35,75.11,75.52,Ok
+13,ASG120SCS01,E:,Content Library,99.98,37.52,62.46,62.47,Ok
+14,ASG121SCS01,C:,,99.46,20.99,78.47,78.9,Ok
+15,ASG121SCS01,E:,Content Library,99.98,32.42,67.56,67.57,Ok
+16,ASG122SCS01,C:,,99.46,21.11,78.35,78.77,Ok
+17,ASG122SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+18,ASG123SCS01,C:,,99.46,21.34,78.12,78.54,Ok
+19,ASG123SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+20,ASG124SCS01,C:,,99.46,35.41,64.05,64.39,Ok
+21,ASG124SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+22,ASG125SCS01,C:,,99.46,23.3,76.16,76.58,Ok
+23,ASG125SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+24,ASG126SCS01,C:,,99.46,16.94,82.52,82.97,Ok
+25,ASG126SCS01,E:,Content Library,99.98,29.38,70.6,70.61,Ok
+26,ASG127SCS01,C:,,99.46,21.58,77.88,78.3,Ok
+27,ASG127SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+28,ASG128SCS01,C:,,99.46,24.34,75.12,75.52,Ok
+29,ASG128SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+30,ASG129SCS01,C:,,99.46,33.44,66.02,66.38,Ok
+31,ASG129SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+32,ASG130SCS01,C:,,99.46,21.63,77.83,78.25,Ok
+33,ASG130SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+34,ASG131SCS01,C:,,99.46,22.17,77.29,77.71,Ok
+35,ASG131SCS01,E:,Content Library,99.98,37.53,62.45,62.47,Ok
+36,ASG132SCS01,C:,,99.46,21.93,77.53,77.95,Ok
+37,ASG132SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+38,ASG133SCS01,C:,,99.46,21.21,78.25,78.68,Ok
+39,ASG133SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+40,ASG134SCS01,C:,,99.46,24.34,75.12,75.52,Ok
+41,ASG134SCS01,E:,Content Library,99.98,37.55,62.43,62.44,Ok
+42,ASG135SCS01,C:,,99.46,21.7,77.76,78.18,Ok
+43,ASG135SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+44,APS102SCS01,C:,,99.46,30.55,68.91,69.28,Ok
+45,APS102SCS01,E:,Content Library,99.98,37.53,62.45,62.46,Ok
+Servers Management Point Status
+SNo,ServerName,Site_Code,MPCert_Status,MPCert_Code,MPList_Status,MPList_Code,Status
+1,GMSCCM,ASG,OK,200,OK,200,Ok
+Components Servers Services Details
+SNo,ServerName,DisplayName,Name,StartMode,Status
+1,GMSCCM,IIS Admin Service,IISADMIN,Auto,Ok
+2,GMSCCM,World Wide Web Publishing Service,W3SVC,Auto,Ok
+3,GMSCCM,Windows Management Instrumentation,Winmgmt,Auto,Ok
+4,GMSCCM,SMS Agent Host,CcmExec,Auto,Ok
+5,GMSCCM,SMS_EXECUTIVE,SMS_EXECUTIVE,Auto,Ok
+6,GMSCCM,SMS_SITE_COMPONENT_MANAGER,SMS_SITE_COMPONENT_MANAGER,Auto,Ok
+7,GMSCCM,SMS_SITE_VSS_WRITER,SMS_SITE_VSS_WRITER,Auto,Ok
+SQL Servers Services Details
+SNo,ServerName,DisplayName,Name,StartMode,Status
+1,GMSCCMSQL2014,Windows Management Instrumentation,Winmgmt,Auto,Ok
+2,GMSCCMSQL2014,SMS Agent Host,CcmExec,Auto,Ok
+3,GMSCCMSQL2014,SMS_EXECUTIVE,SMS_EXECUTIVE,Auto,Ok
+4,GMSCCMSQL2014,SQL Server Reporting Services (MSSQLSERVER),ReportServer,Auto,Ok
+5,GMSCCMSQL2014,SQL Server (MSSQLSERVER),MSSQLSERVER,Auto,Ok
+Backup Status
+SNo,ServerName,Backup Checking Time,SiteBKP,DBBKP,Status
+1,GMSCCM,11/11/2020 21:00:00 and 11/12/2020 06:00:00,Failed,NA,Critical
+1,GMSCCMSQL2014,11/11/2020 21:00:00 and 11/12/2020 06:00:00,NA,Success,Ok
+Inbox Detail Status
+SNo,FolderName,Folder Path,File Count,Folder Size,Status
+1,inboxes,\\GMSCCM\SMS_ASG\inboxes,0,107.27 MB,Ok
+2,ccr.box,\\GMSCCM\SMS_ASG\inboxes\ccr.box,0,0.00 MB,Ok
+3,ccrretry.box,\\GMSCCM\SMS_ASG\inboxes\ccrretry.box,135,0.00 MB,Ok
+4,auth,\\GMSCCM\SMS_ASG\inboxes\auth,0,107.03 MB,Ok
+5,ddm.box,\\GMSCCM\SMS_ASG\inboxes\auth\ddm.box,5,0.01 MB,Ok
+6,BAD_DDRS,\\GMSCCM\SMS_ASG\inboxes\auth\ddm.box\BAD_DDRS,0,0.00 MB,Ok
+7,incoming,\\GMSCCM\SMS_ASG\inboxes\auth\statesys.box\incoming,0,0.00 MB,Ok
+8,sinv.box,\\GMSCCM\SMS_ASG\inboxes\auth\sinv.box,0,0.00 MB,Ok
+9,statesys.box,\\GMSCCM\SMS_ASG\Inboxes\auth\statesys.box,0,5.54 MB,Ok
+10,retry,\\GMSCCM\SMS_ASG\inboxes\auth\dataldr.box\retry,0,0.00 MB,Ok
+11,dataldr.box,\\GMSCCM\SMS_ASG\Inboxes\auth\dataldr.box,2,101.47 MB,Ok
+12,process,\\GMSCCM\SMS_ASG\inboxes\auth\dataldr.box\process,0,0.00 MB,Ok
+13,BADMIFS,\\GMSCCM\SMS_ASG\inboxes\auth\dataldr.box\BADMIFS,0,101.09 MB,Ok
+14,schedule.box,\\GMSCCM\SMS_ASG\inboxes\schedule.box,653,0.23 MB,Ok
+15,tosend,\\GMSCCM\SMS_ASG\inboxes\schedule.box\tosend,0,0.00 MB,Ok
+16,Replmgr.box,\\GMSCCM\SMS_ASG\inboxes\Replmgr.box,0,0.00 MB,Ok
+17,offermgr.box,\\GMSCCM\SMS_ASG\Inboxes\offermgr.box,47,0.00 MB,Ok
+18,compsumm.box,\\GMSCCM\SMS_ASG\Inboxes\compsumm.box,0,0.00 MB,Ok
+19,Despoolr.box,\\GMSCCM\SMS_ASG\Inboxes\Despoolr.box,0,0.00 MB,Ok
+20,Receive,\\GMSCCM\SMS_ASG\Inboxes\Despoolr.box\Receive,0,0.00 MB,Ok
+Issue Site Servers Status
+SiteCode,ServerName,SiteName,TimeStamp,SiteState,Status
+ASG,GMSCCM.acibadem.com.tr,ASG - ACIBADEM SAGLIK GRUBU,11/12/2020 11:45:24,Active,Critical
+Component Status
+SiteCode,ServerName,ComponentName,Thread,Errors,Warns,Infos,StartupType,State,Status
+ASG,GMSCCM.ACIBADEM.COM.TR,SMS_AD_USER_DISCOVERY_AGENT,Started,0,66,573,Scheduled,Offline,Critical
+ASG,GMSCCM.ACIBADEM.COM.TR,SMS_CLIENT_CONFIG_MANAGER,Started,2,80,6,Autostarting,Online,Critical
+ASG,GMSCCM.ACIBADEM.COM.TR,SMS_DISTRIBUTION_MANAGER,Started,92,0,164,Autostarting,Online,Critical
+Content Distribution Detailed Status
+SNo,ServerName,SiteCode,PackageID,PackageName,SourceVer,LastRefreshTime,InstallStatus,Status
+1,ASG102SCS01.acibadem.com.tr,ASG,ASG001C1,.Net 4.5.2,1,07/03/2019 11:43:13,Content monitoring,Warning
+2,ASG126SCS01.acibadem.com.tr,ASG,ASG001B6,ASG_Windows_Office_2013,49,11/11/2020 21:01:03,Retrying package installation,Warning
+3,ASG126SCS01.acibadem.com.tr,ASG,ASG001B7,ASG_Windows_10,33,10/21/2020 20:11:40,Package installation failed,Warning
+4,ASG126SCS01.acibadem.com.tr,ASG,ASG001B8,ASG_Microsoft_Office2010,41,10/28/2020 19:01:26,Package installation failed,Warning
+5,ASG126SCS01.acibadem.com.tr,ASG,ASG001B9,ASG_Microsoft_Office2016,55,11/10/2020 23:02:06,Retrying package installation,Warning
+6,ASG126SCS01.acibadem.com.tr,ASG,ASG001BA,ASG_Windows_Client8,45,10/21/2020 20:13:05,Package installation failed,Warning
+7,ASG126SCS01.acibadem.com.tr,ASG,ASG001B3,ASG_Windows_Server_2016,35,10/21/2020 20:11:28,Package installation failed,Warning
+8,ASG126SCS01.acibadem.com.tr,ASG,ASG001A9,ASG_Windows_Client_7,28,10/21/2020 20:10:47,Package installation failed,Warning
+9,ASG126SCS01.acibadem.com.tr,ASG,ASG001CB,ASG_Windows_Server2019,27,10/21/2020 20:13:45,Package installation failed,Warning
+10,ASG126SCS01.acibadem.com.tr,ASG,ASG001A7,ASG_Windows_Server2012_R2,41,10/21/2020 20:10:36,Package installation failed,Warning
+11,ASG126SCS01.acibadem.com.tr,ASG,ASG001A0,ASG_Windows_Server2008_R2,31,10/21/2020 20:10:41,Package installation failed,Warning

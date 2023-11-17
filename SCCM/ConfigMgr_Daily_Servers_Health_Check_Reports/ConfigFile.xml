@@ -1,0 +1,58 @@
+<Settings>
+	<CentralSettings>
+		<SCCMCentralDBName>CM_ASG</SCCMCentralDBName>
+		<SCCMCentralDBServerName>GMSCCMSQL2014</SCCMCentralDBServerName>
+	</CentralSettings>
+
+	<SCCMSettings>
+		<ProjectName>Acibadem</ProjectName>	
+		<OutputFileName>ConfigMgr_Daily_Servers_Health_Check_Reports</OutputFileName>
+		<strServers>GMSCCM,GMSCCMSQL2014,ASG100SCS01,ASG101SCS01,ASG102SCS01,ASG120SCS01,ASG121SCS01,ASG122SCS01,ASG123SCS01,ASG124SCS01,ASG125SCS01,ASG126SCS01,ASG127SCS01,ASG128SCS01,ASG129SCS01,ASG130SCS01,ASG131SCS01,ASG132SCS01,ASG133SCS01,ASG134SCS01,ASG135SCS01,APS102SCS01</strServers>
+		<strMPServers>GMSCCM</strMPServers>
+		<strServicesServers>GMSCCM</strServicesServers>
+		<SiteCode>ASG</SiteCode>
+		<SMSProviderServerName>GMSCCM</SMSProviderServerName>
+		<SMSDBServerName>GMSCCMSQL2014</SMSDBServerName>		
+	</SCCMSettings>
+
+	<EmailSettings>
+		<TriggerMail>Yes</TriggerMail>
+		<SMTPServer>smtprelay01.acibadem.com.tr</SMTPServer>
+		<FromAddress>sccmhealthcheckalert@acibadem.com.tr</FromAddress>
+		<ToAddress>sysadmin@acibadem.com</ToAddress>
+		<CCAddress></CCAddress>
+		<BCCAddress></BCCAddress>
+	</EmailSettings>
+
+	<HealthCheckCustomSettings>
+		<CheckServersAvailabilityRpt>Yes</CheckServersAvailabilityRpt>
+		<CheckServersDiskSpaceRpt>Yes</CheckServersDiskSpaceRpt>
+		<CheckServersMPRpt>Yes</CheckServersMPRpt>
+		<CheckSiteServersServicesRpt>Yes</CheckSiteServersServicesRpt>
+		<CheckSQLServerServicesRpt>Yes</CheckSQLServerServicesRpt>
+		<CheckBackupsRpt>Yes</CheckBackupsRpt>
+		<CheckInboxRpt>Yes</CheckInboxRpt>
+		<CheckIssueSiteServersRpt>Yes</CheckIssueSiteServersRpt>
+		<CheckCompRpt>Yes</CheckCompRpt>
+		<CheckWaitingContentRpt>Yes</CheckWaitingContentRpt>
+		<GenerateCSVRpt>Yes</GenerateCSVRpt>	    
+	</HealthCheckCustomSettings>
+
+	<DefaultSettings>
+		<InboxWarningCount>1000</InboxWarningCount>
+		<InboxCriticalCount>5000</InboxCriticalCount>
+		<WarningDiskSpacePercentage>15</WarningDiskSpacePercentage>
+		<CriticalDiskSpacePercentage>10</CriticalDiskSpacePercentage>
+		<CheckSiteBackup>Yes</CheckSiteBackup>
+		<CheckDBBackup>Yes</CheckDBBackup>	
+		<HistoryRpt>-30</HistoryRpt>
+	</DefaultSettings>
+
+	<HTMLSettings>
+		<HeaderBGColor>#425563</HeaderBGColor>
+		<FooterBGColor>#425563</FooterBGColor>
+		<TableHeaderBGColor>#01A982</TableHeaderBGColor>
+		<TableHeaderRowBGColor>#CCCCCC</TableHeaderRowBGColor>
+		<TextColor>white</TextColor>
+	</HTMLSettings>		
+</Settings>

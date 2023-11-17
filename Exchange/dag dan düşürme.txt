@@ -1,0 +1,15 @@
+Remove-DatabaseAvailabilityGroupServer -Identity OKDAG2019 -MailboxServer EXCH19N2 -ConfigurationOnly
+
+Move-ActiveMailboxDatabase -Server "EXCH19N2" -ActivateOnServer "EXCH19N1"
+
+
+Move-ActiveMailboxDatabase RestrictUsersDB -ActivateOnServer EXCH19N1 -MountDialOverride "BestAvailability" -SkipActiveCopyChecks -SkipClientExperienceChecks -SkipHealthChecks
+
+Remove-DatabaseAvailabilityGroupServer -Identity OKDAG2019 -MailboxServer EXCH19N1
+
+
+Move-ActiveMailboxDatabase -Identity "RestrictUsersDB" -SkipMoveSuppressionChecks -ActivateOnServer EXCH19N1
+
+
+Error: Unable to access cluster root key (Error: An error occurred while attempting a cluster operation. Error: Cluster
+API failed: "GetClusterKey failed with 0x46.

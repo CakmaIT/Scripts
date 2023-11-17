@@ -1,0 +1,15 @@
+$Date=((Get-Date -UFormat %V)-1)
+$Date2=(Get-Date -Format dd_MM_yy)
+$Source      = Get-ChildItem "C:\tools\FileSync\Logs\Koz_Log_*.txt" | Where-Object {$_.Name -notlike "*.zip" -and $_.LastWriteTime -lt (Get-Date).AddDays(-7)}| Where-Object {$_.Name -notlike "*.rar"}
+$Destination = "C:\tools\FileSync\Logs\Archieve\"
+$RarApp      = "C:\tools\FileSync\rar.exe" 
+ForEach ($files in $Source) { 
+    & $RarApp a -df $($Destination + $Date+".Hafta_CD_" + $Date2 + ".rar") $($files.FullName)
+    Get-Process rar | Wait-Process
+    }
+$Source2      = Get-ChildItem "C:\tools\FileSync\Logs\Tree\Koz_*.txt" | Where-Object {$_.Name -notlike "*.zip" -and $_.LastWriteTime -lt (Get-Date).AddDays(-7)}| Where-Object {$_.Name -notlike "*.rar"}
+$Destination2 = "C:\tools\FileSync\Logs\Tree\Archieve\"
+ForEach ($files2 in $Source2) { 
+    & $RarApp a -df $($Destination2 + $Date+".Hafta_CD_" + $Date2 + ".rar") $($files2.FullName)
+    Get-Process rar | Wait-Process
+    }

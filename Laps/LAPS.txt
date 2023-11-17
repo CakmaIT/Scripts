@@ -1,0 +1,50 @@
+Download linki
+https://www.microsoft.com/en-us/download/details.aspx?id=46899
+
+Yüklenecekler
+IT PC - Managment UI , GPO Editor Template
+DC - Powershell Extencion
+Client - GPO CSE
+
+powershellde  
+import-module AdmPwd.PS
+DC lere replike olacağı için 10 dk kadar sürebilir
+
+Uptade-AdmPwdADSchema
+
+
+
+
+kontrol için userın adresini al
+find-admpwdextendedrigts -identity boolakademi.com/YA-Test/Comp | format-table
+
+şifreleri görmemesi için
+adsi editten ou ya geliyoruz
+ou yu seçiyoruz
+user yada grup a tıklat edit
+all extenden rights tikini kaldır
+
+set-admpwdcomputerselfpermission -orgunit **
+
+set-admpwdreadpasswordpermission -orgunit ** -allowedPrincipals grup adı
+
+set-admpwdresetpasswordpermission -orgunit ** -allowedPrincipals grup adı
+
+adml ve admx dosyasını kopyalamayı unutma
+C:\Windows\PolicyDefinitions altında AdmPwd.admx
+C:\Windows\PolicyDefinitions\en-US altında AdmPwd.adml
+
+C:\Windows\SYSVOL\sysvol\mn.com.tr\Policies\PolicyDefinitions altına kopyala
+C:\Windows\SYSVOL\sysvol\mn.com.tr\Policies\PolicyDefinitions\en-US altına kopyala
+
+
+
+GPO ya gel ve yeni gpo oluştur
+computer>administrative templates>LAPS
+
+Client tarafında
+
+Custom Setup bölümünde yalnızca AdmPwd GPO Extension bileşeni seçilir ve Next ile devam edilir.
+
+Kurulum sonrasında C:\Program Files\LAPS\CSE klasörünün içeriği AdmPwd.dll olmalıdır.
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Settings>
+  <EmailSettings>
+    <SMTPServer>mail.yildirimgroup.com</SMTPServer>
+    <SMTPPort>25</SMTPPort>
+    <MailFrom>system.monitor@yildirimgroup.com</MailFrom>
+    <MailTo>system.monitor@yildirimgroup.com</MailTo>
+  </EmailSettings>
+  <Exclusions>
+    <DBName></DBName>
+    <DBName></DBName>
+  </Exclusions>
+  <OtherSettings>
+    <ThresholdMonday>48</ThresholdMonday>
+    <ThresholdOther>24</ThresholdOther>
+  </OtherSettings>
+</Settings>

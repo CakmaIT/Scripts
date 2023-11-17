@@ -1,0 +1,58 @@
+<Settings>
+	<CentralSettings>
+		<SCCMCentralDBName>CM_ASG</SCCMCentralDBName>
+		<SCCMCentralDBServerName>gmsccmsql2014.acibadem.com.tr</SCCMCentralDBServerName>
+	</CentralSettings>
+
+	<SCCMSettings>
+		<ProjectName>Acibadem</ProjectName>	
+		<OutputFileName>ConfigMgr_Daily_Servers_Health_Check_Reports</OutputFileName>
+		<strServers>gmsccm.acibadem.com.tr</strServers>
+		<strMPServers>gmsccm.acibadem.com.tr</strMPServers>
+		<strServicesServers>gmsccm.acibadem.com.tr</strServicesServers>
+		<SiteCode>ASG</SiteCode>
+		<SMSProviderServerName>gmsccm.acibadem.com.tr</SMSProviderServerName>
+		<SMSDBServerName>gmsccm2014.acibadem.com.tr</SMSDBServerName>		
+	</SCCMSettings>
+
+	<EmailSettings>
+		<TriggerMail>yes</TriggerMail>
+		<SMTPServer>smtprelay01.acibadem.com.tr</SMTPServer>
+		<FromAddress>sccmhealthcheckalert@domainname.com</FromAddress>
+		<ToAddress>yasar.abravaya@acibadem.com</ToAddress>
+		<CCAddress></CCAddress>
+		<BCCAddress></BCCAddress>
+	</EmailSettings>
+
+	<HealthCheckCustomSettings>
+		<CheckServersAvailabilityRpt>Yes</CheckServersAvailabilityRpt>
+		<CheckServersDiskSpaceRpt>Yes</CheckServersDiskSpaceRpt>
+		<CheckServersMPRpt>Yes</CheckServersMPRpt>
+		<CheckSiteServersServicesRpt>Yes</CheckSiteServersServicesRpt>
+		<CheckSQLServerServicesRpt>Yes</CheckSQLServerServicesRpt>
+		<CheckBackupsRpt>Yes</CheckBackupsRpt>
+		<CheckInboxRpt>Yes</CheckInboxRpt>
+		<CheckIssueSiteServersRpt>Yes</CheckIssueSiteServersRpt>
+		<CheckCompRpt>Yes</CheckCompRpt>
+		<CheckWaitingContentRpt>Yes</CheckWaitingContentRpt>
+		<GenerateCSVRpt>Yes</GenerateCSVRpt>	    
+	</HealthCheckCustomSettings>
+
+	<DefaultSettings>
+		<InboxWarningCount>1000</InboxWarningCount>
+		<InboxCriticalCount>5000</InboxCriticalCount>
+		<WarningDiskSpacePercentage>15</WarningDiskSpacePercentage>
+		<CriticalDiskSpacePercentage>10</CriticalDiskSpacePercentage>
+		<CheckSiteBackup>Yes</CheckSiteBackup>
+		<CheckDBBackup>Yes</CheckDBBackup>	
+		<HistoryRpt>-30</HistoryRpt>
+	</DefaultSettings>
+
+	<HTMLSettings>
+		<HeaderBGColor>#425563</HeaderBGColor>
+		<FooterBGColor>#425563</FooterBGColor>
+		<TableHeaderBGColor>#01A982</TableHeaderBGColor>
+		<TableHeaderRowBGColor>#CCCCCC</TableHeaderRowBGColor>
+		<TextColor>white</TextColor>
+	</HTMLSettings>		
+</Settings>

@@ -1,0 +1,584 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<title>AD Status Report</title>
+<STYLE TYPE="text/css">
+<!--
+td {
+font-family: Tahoma;
+font-size: 11px;
+border-top: 1px solid #999999;
+border-right: 1px solid #999999;
+border-bottom: 1px solid #999999;
+border-left: 1px solid #999999;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+}
+body {
+margin-left: 5px;
+margin-top: 5px;
+margin-right: 0px;
+margin-bottom: 10px;
+
+table {
+border: thin solid #000000;
+}
+-->
+</style>
+</head>
+<body>
+<table width='100%'>
+<tr bgcolor='Lavender'>
+<td colspan='7' height='25' align='center'>
+<font face='tahoma' color='#003399' size='4'><strong>Active Directory Health Check</strong></font>
+</td>
+</tr>
+</table>
+<table width='100%'>
+<tr bgcolor='IndianRed'>
+<td width='5%' align='center'><B>Identity</B></td>
+<td width='10%' align='center'><B>PingSTatus</B></td>
+<td width='10%' align='center'><B>NetlogonService</B></td>
+<td width='10%' align='center'><B>NTDSService</B></td>
+<td width='10%' align='center'><B>DNSServiceStatus</B></td>
+<td width='10%' align='center'><B>NetlogonsTest</B></td>
+<td width='10%' align='center'><B>ReplicationTest</B></td>
+<td width='10%' align='center'><B>ServicesTest</B></td>
+<td width='10%' align='center'><B>AdvertisingTest</B></td>
+<td width='10%' align='center'><B>FSMOCheckTest</B></td>
+</tr>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> GMASGDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> GMASGDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> GMASGDC03.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KDKDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KCLDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KDKDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KCLDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KOZDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> MASDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> MASDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KOZDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> TKSDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> TKSDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ADADC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ADADC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ANKDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ANKDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ATKDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BKRDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BKRDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BODDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BRSDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BRSDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> FULDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KAYDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KAYDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> FULDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ESKDC1.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ESKDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Red' align=center><B>ReplicationsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> SAMCMDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> SAMCMDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> APLUSDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> APLUSDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KUCDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ALTDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ALTDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> BODDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> ATKDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> KUCDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> INTDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> INTDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> DRCDC01.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> DRCDC02.acibadem.com.tr</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> LABMEDDC01.labmed.saglik.local</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Red' align=center><B>NetlogonsFail</B></td>
+<td bgcolor= 'Red' align=center><B>ReplicationsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Red' align=center><B>AdvertisingFail</B></td>
+<td bgcolor= 'Red' align=center><B>FSMOCheckFail</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> GMLABMEDDC.labmed.saglik.local</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Red' align=center><B>NetlogonsFail</B></td>
+<td bgcolor= 'Red' align=center><B>ReplicationsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Red' align=center><B>AdvertisingFail</B></td>
+<td bgcolor= 'Red' align=center><B>FSMOCheckFail</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> MOBDC01.mobil.saglik.local</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Red' align=center><B>NetlogonsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Red' align=center><B>AdvertisingFail</B></td>
+<td bgcolor= 'Red' align=center><B>FSMOCheckFail</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> MOBDC02.mobil.saglik.local</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Red' align=center><B>NetlogonsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ReplicationsPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Red' align=center><B>AdvertisingFail</B></td>
+<td bgcolor= 'Red' align=center><B>FSMOCheckFail</B></td>
+<tr>
+<td bgcolor= 'GainsBoro' align=center>  <B> GMMOBDC01.mobil.saglik.local</B></td>
+<td bgcolor= 'Aquamarine' align=center>  <B>Success</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>Running</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>NetlogonsPassed</B></td>
+<td bgcolor= 'Red' align=center><B>ReplicationsFail</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>ServicesPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>AdvertisingPassed</B></td>
+<td bgcolor= 'Aquamarine' align=center><B>FSMOCheckPassed</B></td>
+<tr>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1 @@
+GBZEXC01 üzerinde C:\Script altinda çalismaktadir. Script'in çalismasi için EMS ihtiyaci mevcuttur.

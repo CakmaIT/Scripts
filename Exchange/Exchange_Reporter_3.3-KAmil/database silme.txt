@@ -1,0 +1,9 @@
+Update-MailboxDatabasecopy ASG-DSL-06\ASG100EXC12 –sourceserver ASG100EXC12 –catalogonly
+
+Mount-Database "ASG-DSL-06"
+
+Dismount-Database "ASG-DSL-06"
+
+Remove-MailboxDatabase -Identity "ASG-DSL-06"
+
+get-mailboxdatabase -Identity ASG-DSL-06 | get-mailbox
